@@ -1,0 +1,29 @@
+{
+    "name": "kalax2/flysystem-huaweicloud-obs",
+    "type": "library",
+    "description": "HuaweiCloud OBS adapter for Flysystem.",
+    "keywords": ["huaweicloud", "obs", "flysystem"],
+    "require": {
+        "php": ">=8.0",
+        "league/flysystem": "^3.0",
+        "kalax2/huaweicloud-obs-client": "^1.0"
+    },
+    "require-dev": {
+        "league/flysystem-adapter-test-utilities": "^3.28",
+        "phpunit/phpunit": "^10.0"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Kalax2\\Flysystem\\Obs\\": "src/"
+        }
+    },
+    "scripts": {
+        "test": "phpunit"
+    },
+    "authors": [
+        {
+            "name": "kalax2"
+        }
+    ]
+}
