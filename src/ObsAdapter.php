@@ -431,6 +431,17 @@ class ObsAdapter implements FilesystemAdapter, TemporaryUrlGenerator, ChecksumPr
     }
 
     /**
+     * @param string $path
+     * @param DateTimeInterface $expiresAt
+     * @param array $config
+     * @return string
+     */
+    public function getTemporaryUrl(string $path, DateTimeInterface $expiresAt, array $config): string
+    {
+        return $this->temporaryUrl($path, $expiresAt, new Config($config));
+    }
+
+    /**
      * @param $path
      * @return StreamInterface
      */
